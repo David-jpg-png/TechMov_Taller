@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -66,8 +67,7 @@ fun Usuario() {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(10.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+                .padding(10.dp)
         ) {
             Text(text = "Edad")
             Text(text = "21 Años")
@@ -75,7 +75,12 @@ fun Usuario() {
             Text(text = "acala244@unab.edu.co")
             Text(text = "Ciudad")
             Text(text = "Bucaramanga, Colombia")
+            Button(onClick = {
+                // Acción que ocurre al presionar el botón (ej. un Toast o un Log)
+            },
+                modifier = Modifier.padding(top = 20.dp) {
+                Text(text = "Contacter")
+            }
         }
-
     }
 }
