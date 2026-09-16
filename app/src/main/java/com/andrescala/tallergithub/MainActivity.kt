@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -50,15 +51,18 @@ fun Usuario() {
         Text(
             text = "Andres David",
             fontWeight = FontWeight.Bold,
-            fontSize = 30.sp,
-            modifier = Modifier
-                .padding(10.dp)
+            fontSize = 25.sp,
+            modifier = Modifier.padding(5.dp)
             )
         Text(text = "Estudiante de Ingenieria de sistemas",
-            fontSize = 20.sp,
+            fontSize = 15.sp,
             color = Color(39, 127, 213),
-            modifier = Modifier
-                .padding(10.dp))
+            modifier = Modifier.padding(5.dp))
+        HorizontalDivider(
+            thickness = 1.dp,
+            color = Color.Gray,
+            modifier = Modifier.padding(top = 15.dp)
+        )
         Column(
             modifier = Modifier
                 .fillMaxSize()
